@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muntasir Raihan Rahman — Principal Machine Learning Engineer</title>
+<meta name="description" content="CV of Muntasir Raihan Rahman: Principal ML Engineer at Microsoft (Cosmos DB AI), PhD UIUC. ML infrastructure, inference optimization, embedding and reranking models, distributed systems, formal methods.">
+<style>
+  :root { --ink:#1a1a2e; --accent:#0b5394; --muted:#5a6472; --rule:#d9dee6; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background:#f4f5f7; }
+  main { max-width: 880px; margin: 32px auto; background:#fff; padding: 48px 56px; box-shadow: 0 1px 6px rgba(0,0,0,.08); }
+  h1 { font-size: 30px; margin: 0 0 4px; text-align:center; }
+  .tagline { text-align:center; font-size: 16px; color: var(--ink); margin: 0 0 6px; }
+  .contact { text-align:center; font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+  .contact a { color: var(--accent); text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+  .pdfbar { text-align:center; margin: 18px 0 6px; }
+  .pdfbtn { display:inline-block; background: var(--accent); color:#fff; padding: 10px 22px; border-radius: 6px; text-decoration:none; font-family: Helvetica, Arial, sans-serif; font-size: 14px; }
+  .pdfbtn:hover { background:#093f70; }
+  h2 { font-size: 17px; text-transform: uppercase; letter-spacing: .06em; border-bottom: 2px solid var(--ink); padding-bottom: 4px; margin: 26px 0 12px; }
+  .role { display:flex; justify-content: space-between; align-items: baseline; margin-top: 14px; }
+  .role .t { font-weight: bold; font-size: 15.5px; }
+  .role .d { font-size: 14px; color: var(--muted); white-space: nowrap; }
+  .org { font-style: italic; font-size: 15px; margin: 1px 0 4px; }
+  p, li { font-size: 15px; line-height: 1.45; }
+  ul { margin: 4px 0 8px; padding-left: 20px; }
+  li { margin-bottom: 3px; }
+  .skills p { margin: 3px 0; }
+  .note { font-size: 13.5px; color: var(--muted); font-style: italic; }
+  @media (max-width: 640px) { main { padding: 28px 20px; margin: 0; } .role { flex-direction: column; } }
+  @media print { body { background:#fff; } main { box-shadow:none; margin:0; } .pdfbar { display:none; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Muntasir Raihan Rahman</h1>
+  <p class="tagline">Principal Machine Learning Engineer | ML Infrastructure &amp; Applied ML Research</p>
+  <p class="contact">Redmond, WA &middot; <a href="mailto:muntasir.raihan@gmail.com">muntasir.raihan@gmail.com</a> &middot;
+    <a href="https://www.linkedin.com/in/muntasir-raihan-rahman">LinkedIn</a> &middot;
+    <a href="https://github.com/mrrahman1517">GitHub</a> &middot;
+    <a href="https://scholar.google.com/citations?hl=en&amp;user=RR74tpkAAAAJ">Google Scholar</a> &middot;
+    <a href="https://www.uwb.edu/faculty/muntasir-rahman/">UW Bothell</a></p>
+
+  <div class="pdfbar"><a class="pdfbtn" href="rahman_cv_industry.pdf">Download CV (PDF)</a></div>
+
+  <h2>Summary</h2>
+  <p>Principal ML engineer and researcher with 10+ years building production ML systems at Microsoft, Keystone AI, and Nokia Bell Labs. Currently hosting embedding and reranking models for Microsoft's Cosmos DB AI service, with deep expertise in inference optimization, distributed ML training, and large-scale model serving. PhD in distributed systems (UIUC); 3,600+ citations (h-index 18) across ML systems, federated learning, and formal methods — most recently machine-checked guarantees (Lean 4) for agentic shared memory. Part-time faculty at UW Bothell, where I teach graduate machine learning.</p>
+
+  <h2>Experience</h2>
+
+  <div class="role"><span class="t">Principal Machine Learning Engineer</span><span class="d">Apr 2026 – Present</span></div>
+  <p class="org">Microsoft — Cosmos DB AI Service, Redmond, WA</p>
+  <ul>
+    <li>Build the AI service behind Azure Cosmos DB, hosting embedding and reranking models used for search and memory workloads.</li>
+    <li>Lead the model serving platform and the team hosting these models in production.</li>
+    <li>Cut inference latency 15&times; (T4) and 4&times; (A100) for embedding models via CUDA-graph capture in multi-process inference; built an asynchronous batch inference service.</li>
+    <li>Designed a multi-layer memory decision engine for LLM serving — cheap decision models first, escalating to a large LLM only when needed.</li>
+    <li>Applied formal methods (Lean 4 proofs, Z3 SMT) to prove safety, security, and privacy guarantees for agentic shared memory systems.</li>
+  </ul>
+
+  <div class="role"><span class="t">Principal Machine Learning Engineer</span><span class="d">Feb 2024 – Mar 2026</span></div>
+  <p class="org">Keystone AI — Core AI Group, Bellevue, WA</p>
+  <ul>
+    <li>Technical lead for ML on Keystone's Deep Enterprise AI Platform, serving Fortune 500 clients (supply chain, inventory, and operations).</li>
+    <li>Built production foundation time-series models (DeepAR, Temporal Fusion Transformer) and reinforcement-learning policies for supply-chain optimization.</li>
+    <li>Applied structural econometric models (Bajari et al.) to estimate demand and price sensitivity.</li>
+  </ul>
+
+  <div class="role"><span class="t">Principal Machine Learning Engineer</span><span class="d">Feb 2020 – Feb 2024</span></div>
+  <p class="org">Microsoft — Copilot Applied AI / Dynamics 365, Redmond, WA</p>
+  <ul>
+    <li>Shipped NL2Journey, using LLMs to automatically generate customer journeys in Dynamics 365 Marketing; led the Microsoft–OpenAI joint effort on generative AI for Dynamics 365 Marketing.</li>
+    <li>Re-architected distributed training for journey models (Horovod, Petastorm, Azure Databricks), cutting training time from 20 hours to ~3 hours.</li>
+    <li>Built production ML for account-protection fraud detection and embedding models for Dynamics 365 Fraud Protection.</li>
+    <li>Built LLM experimentation infrastructure and graph neural networks for customer-journey recommendation.</li>
+    <li>Published in MSJAR on the trade-offs between human-authored and machine-generated customer journeys.</li>
+  </ul>
+
+  <div class="role"><span class="t">Research Scientist</span><span class="d">Jan 2018 – Jan 2020</span></div>
+  <p class="org">Nokia Bell Labs, Murray Hill, NJ</p>
+  <ul>
+    <li>Research on deep reinforcement learning for network slicing and resource allocation in 5G networks.</li>
+    <li>Designed digital-twin infrastructure for ML-driven network management.</li>
+  </ul>
+
+  <div class="role"><span class="t">Software Engineer II</span><span class="d">Aug 2016 – Dec 2017</span></div>
+  <p class="org">Microsoft — Azure, Redmond, WA</p>
+  <ul>
+    <li>Improved debugging capabilities of Cosmos, Microsoft's internal big-data analytics platform; designed a scale-out distributed log ingestion system using a distributed actor framework.</li>
+  </ul>
+
+  <h2>Selected Publications</h2>
+  <ul>
+    <li>Geo-distribution of Actor-Based Services. <i>Proc. ACM Program. Lang. (OOPSLA)</i>, 2017. (with Bernstein, Burckhardt, et al.)</li>
+    <li>Federated Learning via Over-the-Air Computation. <i>IEEE Trans. Wireless Communications</i>, 2021. (with Yang, et al.)</li>
+    <li>Privacy-Preserving Decentralized Aggregation for Federated Learning. <i>IEEE INFOCOM Workshops</i>, 2021.</li>
+    <li>Deep Reinforcement Learning for Network Slicing. <i>IEEE/IFIP CNSM</i>, 2019.</li>
+    <li>Formal Analysis of Failures in Multi-Agent Systems. <i>ACM TAAS</i>, 2017.</li>
+    <li>Client-Centric Benchmarking of Eventual Consistency. <i>ACM Middleware</i>, 2014. Best paper award.</li>
+    <li>ViNEYard: Virtual Network Embedding Algorithms with Coordinated Node and Link Mapping. <i>IEEE/ACM Trans. Networking</i>, 2012. (1,000+ citations; INFOCOM 2009 version 1,188)</li>
+    <li>Towards a Data-centric View of Consistent Disaster Recovery. <i>USENIX HotDep</i>, 2012.</li>
+    <li>Adaptive Data Migration in Multi-Tiered Storage. <i>IEEE ICAC</i>, 2015. Best paper award.</li>
+    <li>Survivable Virtual Network Embedding. <i>IEEE TNSM</i>, 2013.</li>
+    <li>Verifying Safety of a Relaying Network with Maude. <i>ICFEM</i>, 2014.</li>
+  </ul>
+  <p class="note">Full list (48 publications; 3,635 citations, h-index 18) on Google Scholar. Current research: certified program models for shared agentic memory, with machine-checked safety, security, and privacy guarantees (Lean 4 / Z3).</p>
+
+  <h2>Teaching</h2>
+  <ul>
+    <li><b>Part-time Lecturer, University of Washington Bothell</b> (2025 – Present): CSS 581, graduate machine learning (Fall 2026); CSS 485, Artificial Neural Networks.</li>
+    <li><b>Lecturer, BUET</b> (2006 – 2007).</li>
+  </ul>
+
+  <h2>Education</h2>
+  <ul>
+    <li><b>PhD, Computer Science</b>, University of Illinois at Urbana-Champaign, 2016. Distributed systems and formal methods. Advisor: Indranil Gupta.</li>
+    <li><b>MMath, Computer Science</b>, University of Waterloo, 2010.</li>
+    <li><b>BSc, Computer Science &amp; Engineering</b>, BUET, 2006. Ranked 5th of 118.</li>
+  </ul>
+
+  <h2>Awards</h2>
+  <ul>
+    <li>VMware Graduate Fellowship (one of 4 winners worldwide)</li>
+    <li>Feng Chen Memorial Award, UIUC</li>
+    <li>Best paper awards: IEEE ICAC 2015, ACM Middleware (client-centric benchmarking), IEEE IC2E 2018</li>
+    <li>WMBB Award, Microsoft Dynamics 365 Products Group, 2021</li>
+  </ul>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <p><b>ML/AI:</b> LLM serving and inference optimization (CUDA graphs, multi-process inference), embedding and reranking models, vector databases and vector search (Azure Cognitive Search), distributed DNN training (Horovod, Petastorm), foundation time-series models, reinforcement learning, graph neural networks, federated learning</p>
+    <p><b>Systems:</b> distributed systems design, Azure and AWS, Databricks, Snowflake, Apache Spark, .NET Orleans</p>
+    <p><b>Formal methods:</b> Lean 4, Z3 SMT, TLA+, Maude</p>
+    <p><b>Languages:</b> Python, C/C++, Rust, Java, Scala, Haskell &middot; <b>Languages (spoken):</b> English, Bengali</p>
+  </div>
+</main>
+</body>
+</html>
